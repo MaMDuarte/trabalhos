@@ -1,0 +1,3 @@
+Descricao projeto
+
+Aplicacao java para gerir recursos  medicos em ambito do covid 19
