@@ -1,79 +1,33 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lista {
+public abstract class Lista {
     // =======================================================
     // ===================== ATRIBUTOS =======================
     // =======================================================
 	
-	private List<Suspeito> listaSuspeitos = new ArrayList<Suspeito>();
-	private List<Infetado> listaInfetados = new ArrayList<Infetado>();
-	private List<Recuperado> listaRecuperados = new ArrayList<Recuperado>();
-	private List<Falecido> listaFalecidos= new ArrayList<Falecido>();
+	private List<Pessoa> lista = new ArrayList<Pessoa>();
+
 	
 	
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
 
-	public List<Suspeito> getListaSuspeitos() {
-		return listaSuspeitos;
+	public List<Pessoa> getLista() {
+		return lista;
 	}
-	public void setListaSuspeitos(List<Suspeito> listaSuspeitos) {
-		this.listaSuspeitos = listaSuspeitos;
-	}
-	
-	public void addSuspeito(Suspeito suspeito) {
-		this.listaSuspeitos.add(suspeito);
+	public void setLista(List<Pessoa> listaSuspeitos) {
+		this.lista = listaSuspeitos;
 	}
 	
-	public void removeSuspeito(Suspeito suspeito) {
-		this.listaSuspeitos.remove(suspeito);
+	public void addPessoa(Pessoa pessoa) {
+		this.lista.add(pessoa);
+		
 	}
 	
-	public List<Infetado> getListaInfetados() {
-		return listaInfetados;
-	}
-	public void setListaInfetados(List<Infetado> listaInfetados) {
-		this.listaInfetados = listaInfetados;
-	}
-	
-	public void addInfetado(Infetado infetado) {
-		this.listaInfetados.add(infetado);
-	}
-	
-	public void removeInfetado(Infetado infetado) {
-		this.listaInfetados.remove(infetado);
-	}
-	
-	public List<Recuperado> getListaRecuperados() {
-		return listaRecuperados;
-	}
-	public void setListaRecuperados(List<Recuperado> listaRecuperados) {
-		this.listaRecuperados = listaRecuperados;
-	}
-	
-	public void addRecuperado(Recuperado recuperado) {
-		this.listaRecuperados.add(recuperado);
-	}
-	
-	public void removeRecuperado(Recuperado recuperado) {
-		this.listaRecuperados.remove(recuperado);
-	}
-	
-	public List<Falecido> getListaFalecidos() {
-		return listaFalecidos;
-	}
-	public void setListaFalecidos(List<Falecido> listaFalecidos) {
-		this.listaFalecidos = listaFalecidos;
-	}
-	
-	public void addFalecido(Falecido falecido) {
-		this.listaFalecidos.add(falecido);
-	}
-	
-	public void removeFalecido(Falecido falecido) {
-		this.listaFalecidos.remove(falecido);
+	public void removePessoa(Pessoa pessoa) {
+		this.lista.remove(pessoa);
 	}
 	
 
@@ -88,22 +42,21 @@ public class Lista {
 	public Lista() {
 		
 	}
+	
+	
 
     // CONSTRUTOR COM PARÂMETROS
 
-	public Lista(List<Suspeito> listaSuspeitos, List<Infetado> listaInfetados, List<Recuperado> listaRecuperados,
-			List<Falecido> listaFalecidos) {
+	public Lista(List<Pessoa> lista) {
 		super();
-		this.listaSuspeitos = listaSuspeitos;
-		this.listaInfetados = listaInfetados;
-		this.listaRecuperados = listaRecuperados;
-		this.listaFalecidos = listaFalecidos;
+		this.lista = lista;
 	}
 
     // =======================================================
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
 
+	
 
 
 
@@ -112,8 +65,10 @@ public class Lista {
     // =======================================================
 
     // ----> toString()
-
-
-
+	@Override
+	public String toString() {
+		return "Lista [lista=" + lista + "]";
+	}
+	
     // ----> equals()
 }

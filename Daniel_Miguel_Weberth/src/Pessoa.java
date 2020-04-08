@@ -1,15 +1,19 @@
 
 public class Pessoa {
+	
 	// =======================================================
 	// ===================== ATRIBUTOS =======================
 	// =======================================================
+	
 	private String nome;
 	private int idade;
 	private String localidade;
-
+	
+	
 	// =======================================================
 	// ============ ACESSORES e MODIFICADORES ===============
 	// =======================================================
+	
 	public String getNome() {
 		return nome;
 	}
@@ -33,34 +37,52 @@ public class Pessoa {
 	public void setLocalidade(String localidade) {
 		this.localidade = localidade;
 	}
+	
+	
 
 	// =======================================================
 	// =================== CONSTRUTORES =====================
 	// =======================================================
 
-	// CONSTRUTOR DEFAULT
-	public Pessoa() {
+	
 
+	// CONSTRUTOR DEFAULT
+	
+	public Pessoa() {
+	
 	}
 
+	
+
 	// CONSTRUTOR COM PARÂMETROS
+	
 	public Pessoa(String nome, int idade, String localidade) {
 		super();
 		this.nome = nome;
 		this.idade = idade;
 		this.localidade = localidade;
+	
 	}
+	
 
 	// =======================================================
 	// =================== .COMPORTAMENTOS ==================
 	// =======================================================
 
+	
+	
+	
 	// =======================================================
 	// ============== MÉTODOS COMPLEMENTARES ==============
 	// =======================================================
 
 	// ----> toString()
-
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", idade=" + idade + ", localidade=" + localidade + "]";
+	}
 	// ----> equals()
+
+	
 
 }

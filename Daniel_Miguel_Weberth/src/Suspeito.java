@@ -1,21 +1,18 @@
-import java.util.Date;
 
-public class Suspeito {
+public class Suspeito extends Lista{
+	
 	// =======================================================
 	// ===================== ATRIBUTOS =======================
 	// =======================================================
-	private Date periodaContagio;
+	
 
+	
 	// =======================================================
 	// ============ ACESSORES e MODIFICADORES ===============
 	// =======================================================
-	public Date getPeriodaContagio() {
-		return periodaContagio;
-	}
-
-	public void setPeriodaContagio(Date periodaContagio) {
-		this.periodaContagio = periodaContagio;
-	}
+	
+	
+	
 	// =======================================================
 	// =================== CONSTRUTORES =====================
 	// =======================================================
@@ -25,22 +22,23 @@ public class Suspeito {
 
 	}
 
-	// CONSTRUTOR COM PARÂMETROS
-	public Suspeito(Date periodaContagio) {
-		super();
-		this.periodaContagio = periodaContagio;
-	}
 
+	// CONSTRUTOR COM PARÂMETROS
+	
+	
+	
 	// =======================================================
 	// =================== .COMPORTAMENTOS ==================
 	// =======================================================
 
+	
+	
 	// =======================================================
 	// ============== MÉTODOS COMPLEMENTARES ==============
 	// =======================================================
 
 	// ----> toString()
-
+	
 	// ----> equals()
 
 }
