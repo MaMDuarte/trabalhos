@@ -1,62 +1,59 @@
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Falecido {
-	  // =======================================================
-    // ===================== ATRIBUTOS =======================
-    // =======================================================
-private Date dataFalecimento;
+	// =======================================================
+	// ===================== ATRIBUTOS =======================
+	// =======================================================
 
+	private List<Pessoa> falecidos = new ArrayList<Pessoa>();
 
+	// =======================================================
+	// ============ ACESSORES e MODIFICADORES ===============
+	// =======================================================
 
+	public List<Pessoa> getFalecidos() {
+		return falecidos;
+	}
 
-    // =======================================================
-    // ============ ACESSORES e MODIFICADORES ===============
-    // =======================================================
-public Date getDataFalecimento() {
-	return dataFalecimento;
-}
+	public void setFalecidos(List<Pessoa> falecido) {
+		this.falecidos = falecido;
+	}
 
-public void setDataFalecimento(Date dataFalecimento) {
-	this.dataFalecimento = dataFalecimento;
-}
+	public void addFalecido(Pessoa falecido) {
+		this.falecidos.add(falecido);
+	}
 
+	public void removeRecuperado(Pessoa falecido) {
+		this.falecidos.remove(falecido);
+	}
 
+	// =======================================================
+	// =================== CONSTRUTORES =====================
+	// =======================================================
 
-    // =======================================================
-    // =================== CONSTRUTORES =====================
-    // =======================================================
+	// CONSTRUTOR DEFAULT
+	public Falecido() {
 
-  
-   
-    // CONSTRUTOR DEFAULT
-public Falecido() {
-	
-}
-   
+	}
 
-    // CONSTRUTOR COM PARÂMETROS
-public Falecido(Date dataFalecimento) {
-	super();
-	this.dataFalecimento = dataFalecimento;
-}
+	// CONSTRUTOR COM PARÂMETROS
 
+	public Falecido(List<Pessoa> falecidos) {
+		super();
+		this.falecidos = falecidos;
+	}
 
+	// =======================================================
+	// =================== .COMPORTAMENTOS ==================
+	// =======================================================
 
-    // =======================================================
-    // =================== .COMPORTAMENTOS ==================
-    // =======================================================
+	// =======================================================
+	// ============== MÉTODOS COMPLEMENTARES ==============
+	// =======================================================
 
+	// ----> toString()
 
-
-
-    // =======================================================
-    // ============== MÉTODOS COMPLEMENTARES ==============
-    // =======================================================
-
-    // ----> toString()
-
-
-
-    // ----> equals()
+	// ----> equals()
 
 }

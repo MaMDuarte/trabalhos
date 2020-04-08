@@ -1,10 +1,11 @@
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Recuperado {
 	  // =======================================================
     // ===================== ATRIBUTOS =======================
     // =======================================================
-	private Date dataRecuperação;
+	private List<Pessoa> recuperados = new ArrayList<Pessoa>();
 
 	
 	
@@ -12,14 +13,22 @@ public class Recuperado {
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
-public Date getDataRecuperação() {
-		return dataRecuperação;
+
+	public List<Pessoa> getRecuperados() {
+		return recuperados;
 	}
 
-	public void setDataRecuperação(Date dataRecuperação) {
-		this.dataRecuperação = dataRecuperação;
+	public void setSuspeitos(List<Pessoa> recuperado) {
+		this.recuperados = recuperado;
 	}
 
+	public void addRecuperado(Pessoa recuperado) {
+		this.recuperados.add(recuperado);
+	}
+
+	public void removeRecuperado(Pessoa recuperado) {
+		this.recuperados.remove(recuperado);
+	}
 	
 
 
@@ -37,9 +46,9 @@ public Date getDataRecuperação() {
 
     // CONSTRUTOR COM PARÂMETROS
 
-public Recuperado(Date dataRecuperação) {
+	public Recuperado(List<Pessoa> recuperados) {
 		super();
-		this.dataRecuperação = dataRecuperação;
+		this.recuperados = recuperados;
 	}
 
     // =======================================================
