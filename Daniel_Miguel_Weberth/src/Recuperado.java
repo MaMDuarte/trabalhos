@@ -18,7 +18,7 @@ public class Recuperado {
 		return recuperados;
 	}
 
-	public void setSuspeitos(List<Pessoa> recuperado) {
+	public void setRecuperados(List<Pessoa> recuperado) {
 		this.recuperados = recuperado;
 	}
 
