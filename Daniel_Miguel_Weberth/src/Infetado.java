@@ -6,35 +6,27 @@ public class Infetado {
 	  // =======================================================
     // ===================== ATRIBUTOS =======================
     // =======================================================
-	private Date dataInfecao;
-	private String Idade;
-	private List<Sintomas> sintomas = new ArrayList<Sintomas>();
+	private List<Pessoa> infetados = new ArrayList<Pessoa>();
 	
 
     // =======================================================
     // ============ ACESSORES e MODIFICADORES ===============
     // =======================================================
-public Date getDataInfecao() {
-		return dataInfecao;
+	public List<Pessoa> getInfetados() {
+		return infetados;
 	}
-	public void setDataInfecao(Date dataInfecao) {
-		this.dataInfecao = dataInfecao;
-	}
-	public String getIdade() {
-		return Idade;
-	}
-	public void setIdade(String idade) {
-		Idade = idade;
-	}
-	public List<Sintomas> getSintomas() {
-		return sintomas;
-	}
-	public void setSintomas(List<Sintomas> sintomas) {
-		this.sintomas = sintomas;
-	}
-	
 
+	public void setInfetados(List<Pessoa> infetados) {
+		this.infetados = infetados;
+	}
 
+	public void addInfetado(Pessoa infetados) {
+		this.infetados.add(infetados);
+	}
+
+	public void removeInfetado(Pessoa infetado) {
+		this.infetados.remove(infetado);
+	}
     // =======================================================
     // =================== CONSTRUTORES =====================
     // =======================================================
@@ -48,14 +40,12 @@ public Date getDataInfecao() {
    
 
     // CONSTRUTOR COM PARÂMETROS
-public Infetado(Date dataInfecao, String idade, List<Sintomas> sintomas) {
-		super();
-		this.dataInfecao = dataInfecao;
-		Idade = idade;
-		this.sintomas = sintomas;
-	}
 
-	
+
+	public Infetado(List<Pessoa> infetados) {
+		super();
+		this.infetados = infetados;
+	}
 
 
 
@@ -71,10 +61,7 @@ public Infetado(Date dataInfecao, String idade, List<Sintomas> sintomas) {
     // =======================================================
 
     // ----> toString()
-@Override
-public String toString() {
-	return "Infetado [dataInfecao=" + dataInfecao + ", Idade=" + Idade + "]";
-}
+
 
 
     // ----> equals()

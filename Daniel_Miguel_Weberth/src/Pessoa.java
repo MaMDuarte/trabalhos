@@ -3,35 +3,35 @@ public class Pessoa {
 	// =======================================================
 	// ===================== ATRIBUTOS =======================
 	// =======================================================
-	private String Nome;
-	private String Idade;
-	private String Localidade;
+	private String nome;
+	private int idade;
+	private String localidade;
 
 	// =======================================================
 	// ============ ACESSORES e MODIFICADORES ===============
 	// =======================================================
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 
-	public String getIdade() {
-		return Idade;
+	public int getIdade() {
+		return idade;
 	}
 
-	public void setIdade(String idade) {
-		Idade = idade;
+	public void setIdade(int idade) {
+		this.idade = idade;
 	}
 
 	public String getLocalidade() {
-		return Localidade;
+		return localidade;
 	}
 
 	public void setLocalidade(String localidade) {
-		Localidade = localidade;
+		this.localidade = localidade;
 	}
 
 	// =======================================================
@@ -44,11 +44,11 @@ public class Pessoa {
 	}
 
 	// CONSTRUTOR COM PARÂMETROS
-	public Pessoa(String nome, String idade, String localidade) {
+	public Pessoa(String nome, int idade, String localidade) {
 		super();
-		Nome = nome;
-		Idade = idade;
-		Localidade = localidade;
+		this.nome = nome;
+		this.idade = idade;
+		this.localidade = localidade;
 	}
 
 	// =======================================================
