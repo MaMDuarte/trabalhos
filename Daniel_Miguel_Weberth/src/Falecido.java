@@ -1,31 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 public class Falecido {
 	// =======================================================
 	// ===================== ATRIBUTOS =======================
 	// =======================================================
-
-	private List<Pessoa> falecidos = new ArrayList<Pessoa>();
+	private Date dataFalecimento;
 
 	// =======================================================
 	// ============ ACESSORES e MODIFICADORES ===============
 	// =======================================================
-
-	public List<Pessoa> getFalecidos() {
-		return falecidos;
+	public Date getDataFalecimento() {
+		return dataFalecimento;
 	}
 
-	public void setFalecidos(List<Pessoa> falecido) {
-		this.falecidos = falecido;
-	}
-
-	public void addFalecido(Pessoa falecido) {
-		this.falecidos.add(falecido);
-	}
-
-	public void removeRecuperado(Pessoa falecido) {
-		this.falecidos.remove(falecido);
+	public void setDataFalecimento(Date dataFalecimento) {
+		this.dataFalecimento = dataFalecimento;
 	}
 
 	// =======================================================
@@ -38,10 +27,9 @@ public class Falecido {
 	}
 
 	// CONSTRUTOR COM PARÂMETROS
-
-	public Falecido(List<Pessoa> falecidos) {
+	public Falecido(Date dataFalecimento) {
 		super();
-		this.falecidos = falecidos;
+		this.dataFalecimento = dataFalecimento;
 	}
 
 	// =======================================================

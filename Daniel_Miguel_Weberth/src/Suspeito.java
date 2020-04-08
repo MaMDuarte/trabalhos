@@ -1,32 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 public class Suspeito {
 	// =======================================================
 	// ===================== ATRIBUTOS =======================
 	// =======================================================
-	private List<Pessoa> suspeitos = new ArrayList<Pessoa>();
+	private Date periodaContagio;
 
 	// =======================================================
 	// ============ ACESSORES e MODIFICADORES ===============
 	// =======================================================
-
-	
-
-	public List<Pessoa> getSuspeitos() {
-		return suspeitos;
+	public Date getPeriodaContagio() {
+		return periodaContagio;
 	}
 
-	public void setSuspeitos(List<Pessoa> suspeitos) {
-		this.suspeitos = suspeitos;
-	}
-
-	public void addSuspeito(Pessoa suspeito) {
-		this.suspeitos.add(suspeito);
-	}
-
-	public void removeSuspeito(Pessoa suspeito) {
-		this.suspeitos.remove(suspeito);
+	public void setPeriodaContagio(Date periodaContagio) {
+		this.periodaContagio = periodaContagio;
 	}
 	// =======================================================
 	// =================== CONSTRUTORES =====================
@@ -38,10 +26,9 @@ public class Suspeito {
 	}
 
 	// CONSTRUTOR COM PARÂMETROS
-
-	public Suspeito(List<Pessoa> suspeitos) {
+	public Suspeito(Date periodaContagio) {
 		super();
-		this.suspeitos = suspeitos;
+		this.periodaContagio = periodaContagio;
 	}
 
 	// =======================================================

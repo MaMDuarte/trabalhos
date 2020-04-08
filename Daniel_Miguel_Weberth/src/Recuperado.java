@@ -1,71 +1,48 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 public class Recuperado {
-	  // =======================================================
-    // ===================== ATRIBUTOS =======================
-    // =======================================================
-	private List<Pessoa> recuperados = new ArrayList<Pessoa>();
+	// =======================================================
+	// ===================== ATRIBUTOS =======================
+	// =======================================================
+	private Date dataRecuperação;
 
-	
-	
-
-    // =======================================================
-    // ============ ACESSORES e MODIFICADORES ===============
-    // =======================================================
-
-	public List<Pessoa> getRecuperados() {
-		return recuperados;
+	// =======================================================
+	// ============ ACESSORES e MODIFICADORES ===============
+	// =======================================================
+	public Date getDataRecuperação() {
+		return dataRecuperação;
 	}
 
-	public void setRecuperados(List<Pessoa> recuperado) {
-		this.recuperados = recuperado;
+	public void setDataRecuperação(Date dataRecuperação) {
+		this.dataRecuperação = dataRecuperação;
 	}
 
-	public void addRecuperado(Pessoa recuperado) {
-		this.recuperados.add(recuperado);
+	// =======================================================
+	// =================== CONSTRUTORES =====================
+	// =======================================================
+
+	// CONSTRUTOR DEFAULT
+	public Recuperado() {
+
 	}
 
-	public void removeRecuperado(Pessoa recuperado) {
-		this.recuperados.remove(recuperado);
-	}
-	
+	// CONSTRUTOR COM PARÂMETROS
 
-
-    // =======================================================
-    // =================== CONSTRUTORES =====================
-    // =======================================================
-
-  
-   
-    // CONSTRUTOR DEFAULT
-	public Recuperado(){
-		
-	}
-   
-
-    // CONSTRUTOR COM PARÂMETROS
-
-	public Recuperado(List<Pessoa> recuperados) {
+	public Recuperado(Date dataRecuperação) {
 		super();
-		this.recuperados = recuperados;
+		this.dataRecuperação = dataRecuperação;
 	}
 
-    // =======================================================
-    // =================== .COMPORTAMENTOS ==================
-    // =======================================================
+	// =======================================================
+	// =================== .COMPORTAMENTOS ==================
+	// =======================================================
 
+	// =======================================================
+	// ============== MÉTODOS COMPLEMENTARES ==============
+	// =======================================================
 
+	// ----> toString()
 
-
-    // =======================================================
-    // ============== MÉTODOS COMPLEMENTARES ==============
-    // =======================================================
-
-    // ----> toString()
-
-
-
-    // ----> equals()
+	// ----> equals()
 
 }

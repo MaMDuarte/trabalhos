@@ -3,67 +3,68 @@ import java.util.Date;
 import java.util.List;
 
 public class Infetado {
-	  // =======================================================
-    // ===================== ATRIBUTOS =======================
-    // =======================================================
-	private List<Pessoa> infetados = new ArrayList<Pessoa>();
-	
+	// =======================================================
+	// ===================== ATRIBUTOS =======================
+	// =======================================================
+	private Date dataInfecao;
+	private String condicao;
+	private List<String> sintomas = new ArrayList<String>();
 
-    // =======================================================
-    // ============ ACESSORES e MODIFICADORES ===============
-    // =======================================================
-	public List<Pessoa> getInfetados() {
-		return infetados;
+	// =======================================================
+	// ============ ACESSORES e MODIFICADORES ===============
+	// =======================================================
+	public Date getDataInfecao() {
+		return dataInfecao;
 	}
 
-	public void setInfetados(List<Pessoa> infetados) {
-		this.infetados = infetados;
+	public void setDataInfecao(Date dataInfecao) {
+		this.dataInfecao = dataInfecao;
 	}
 
-	public void addInfetado(Pessoa infetados) {
-		this.infetados.add(infetados);
+	public String getCondicao() {
+		return condicao;
 	}
 
-	public void removeInfetado(Pessoa infetado) {
-		this.infetados.remove(infetado);
+	public void setIdade(String condicao) {
+		this.condicao = condicao;
 	}
-    // =======================================================
-    // =================== CONSTRUTORES =====================
-    // =======================================================
 
-  
-   
-    // CONSTRUTOR DEFAULT
+	public List<String> getSintomas() {
+		return sintomas;
+	}
+
+	public void setSintomas(List<String> sintomas) {
+		this.sintomas = sintomas;
+	}
+
+	// =======================================================
+	// =================== CONSTRUTORES =====================
+	// =======================================================
+
+	// CONSTRUTOR DEFAULT
 	public Infetado() {
-		
+
 	}
-   
 
-    // CONSTRUTOR COM PARÂMETROS
-
-
-	public Infetado(List<Pessoa> infetados) {
+	// CONSTRUTOR COM PARÂMETROS
+	public Infetado(Date dataInfecao, String condicao, List<String> sintomas) {
 		super();
-		this.infetados = infetados;
+		this.dataInfecao = dataInfecao;
+		this.condicao = condicao;
+		this.sintomas = sintomas;
 	}
 
+	// =======================================================
+	// =================== .COMPORTAMENTOS ==================
+	// =======================================================
+
+	// =======================================================
+	// ============== MÉTODOS COMPLEMENTARES ==============
+	// =======================================================
+
+	// ----> toString()
 
 
-    // =======================================================
-    // =================== .COMPORTAMENTOS ==================
-    // =======================================================
-
-
-
-
-    // =======================================================
-    // ============== MÉTODOS COMPLEMENTARES ==============
-    // =======================================================
-
-    // ----> toString()
-
-
-
-    // ----> equals()
+	// ----> equals()
 
 }
