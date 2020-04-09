@@ -55,7 +55,18 @@ public abstract class Lista {
     // =======================================================
     // =================== .COMPORTAMENTOS ==================
     // =======================================================
-
+	public void moveTo(Lista lista, Pessoa pessoa) {
+        this.removePessoa(pessoa);
+        lista.addPessoa(pessoa);
+    }
+    
+    
+    public void imprimirLista() {
+        for (Pessoa pessoa : this.lista) {
+            System.out.println(pessoa.getNome() + " | " + pessoa.getIdade()+ " | " + pessoa.getLocalidade());
+        }
+        System.out.println();
+    }
 	
 
 
