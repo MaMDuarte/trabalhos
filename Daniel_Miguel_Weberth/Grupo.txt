@@ -1,0 +1,7 @@
+Grupo:
+Daniel Vicente
+Miguel Serdeira
+Weberth Rosa
+
+Projeto:
+Programa orientado por objectos para registar pessoas infetadas com uma certa doença.
